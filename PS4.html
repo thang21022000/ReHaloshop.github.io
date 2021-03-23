@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="PS3.css" />
+<link rel="stylesheet" type="text/css" href="slide.css" />
+<title>HALOGAME</title>
+</head>
+
+<body>
+<div class="container">
+        <header> 
+        <div class="menu">        
+                <ul>
+                	<li><a href="index.html"><img class="home" src="Images/home_circle_icon_137496.png" width="25" /></a></li>
+                    <li><a href="index.html">Trang chủ</li>
+                    <li><a href="GioiThieu.html">Giới thiệu</li>
+                    <li><a href="#">Liên hệ</li>
+                </ul>
+            </div>
+            <img class="logo" src="Images/logo.png" alt="HALOGAME" />
+            <img class="logo2"src="Images/halo-game-store-logo-retina-324x126.jpg" />
+            <div class="search">
+            	<input type="text" name="search" placeholder="Nhập Sản Phẩm Cần Tìm..." />
+				<input type="submit" name="find" value="Tìm"  />
+            </div>
+            <div class="login">
+            	<img class="logologin" src="Images/tải xuống (1).png" width="25" />
+                <a href="#">Đăng Nhập/</a>
+                <a href="#">Đăng Ký</a>
+            </div>
+            <div class="tragop">
+            	<a href="#">
+            	<img class="logotragop" src="Images/21004.png" width="25" />
+                <p>Trả Góp Lãi Xuất Từ 0%</p>             
+                </a>
+            </div>
+            <div class="giohang">
+            <a href="#">
+            	<img src="Images/pngtree-cart-icon-isolated-on-abstract-background-png-image_5165752.jpg" width="25" />
+                <p>Giỏ Hàng 0item(s)</p>
+            </a>
+            </div>
+            <img src="Images/ps4-slim-summer-sale-categories-2560x560.jpg" width="1280" />
+           
+        </header>
+        <nav id="left">
+         		
+                <div class="categories">
+              	<p>CATEGORIES</p>
+                <ul>
+                	 <li id="disk"><a href="#">Thể Loại</a>
+                        <ul>
+                            <li><a href="Action.html">Action</a></li>
+                            <li><a href="Adventure.html">Adventure</a></li>
+                            <li><a href="Gun.html">Gun</a></li>
+                            <li><a href="Racing.html">Racing</a></li>
+                            <li><a href="Survive.html">Survive</a></li>
+                            <li><a href="RPG.html">RPG</a></li>
+                        </ul>
+                    </li>
+                    <li id="playgame"><a href="#">Máy Game</a>
+                    	<ul>
+                        	<li><a href="PS3.html">PS3</a></li>
+                            <li><a href="PS4.html">PS4</a></li>
+                            <li><a href="PS5.html">PS5</a></li>
+                            <li><a href="NinTendo.html">Nitendo Swtich</a></li>
+                        
+                       </ul>
+                    </li>
+                </ul>
+                </div>  
+                <div class="calender">
+                    	<script language="javascript">
+							<!--begin
+							monthnames = new Array("January","Februrary","March","April","May","June","July"
+							,"August","September","October","November","Demcember");
+							var linkcount = 0;
+							function addlink(month,day, href){
+								var entry = new Array(3);
+								entry[0] = month;
+								entry[1] = day;
+								entry[2] = href;
+								this[linkcount++] = entry;
+							}
+							Array.prototype.addlink = addlink;
+							linkdays = new Array;
+							monthdays = new Array(12);
+							monthdays[0] = 31;
+							monthdays[1] = 28;
+							monthdays[2] = 31;
+							monthdays[3] = 30;
+							monthdays[4] = 31;
+							monthdays[5] = 30;
+							monthdays[6] = 31;
+							monthdays[7] = 31;
+							monthdays[8] = 30;
+							monthdays[9] = 31;
+							monthdays[10] = 30;
+							monthdays[11] = 31;
+
+							todayDate = new Date();
+							thisday = todayDate.getDay();
+							thismonth = todayDate.getMonth();
+							thisdate = todayDate.getDate();
+							thisyear = todayDate.getYear();
+							thisyear = thisyear % 100;
+							thisyear = ((thisyear < 50) ?(2000 + thisyear) : (1900 + thisyear));
+							if(((thisyear % 4 ==0) && !(thisyear % 100 == 0)) || (thisyear % 400 == 0 )) monthdays[1]++;
+							startspaces = thisday;
+							while(startspaces > 7) startspaces -= 7;
+							startspaces = thisday - startspaces + 1;
+							if(startspaces < 0 ) startspaces += 7;
+							document.write("<table>");
+							document.write("<tr><td colspan = 7 class='monthyear'>" + monthnames[thismonth] + " " + thisyear + "</td></tr>");
+							document.write("<tr class = 'weektitle'>");
+							document.write("<td align=center>Sun</td>");
+						  	document.write("<td align=center>Mon</td>");
+						 	document.write("<td align=center>Tus</td>");
+						 	document.write("<td align=center>Wed</td>");
+						 	document.write("<td align=center>Thu</td>");
+						 	document.write("<td align=center>Fri</td>");
+							document.write("<td align=center>Sat</td>");
+						 	document.write("</tr>");
+						 	document.write("<tr>");
+							for( s = 0; s < startspaces; s++)
+							{
+								document.write("<td></td>");	
+							}
+							count = 1;
+							while(count <= monthdays[thismonth]){
+								for( b = startspaces ; b < 7; b++){
+									linktrue = false;
+									document.write("<td class= 'weekday'>");
+									for( c = 0; c < linkdays.length; c++){
+										if(linkdays[c] != null){
+											if ((linkdays[c][0]==thismonth + 1) &&(linkdays[c][1]==count)) {
+												document.write("<a href =\"" + linkdays[c][2] + "\">");
+												linktrue = true;
+											}
+										}
+									}
+									if(count == thisday){
+										document.write("<font color= 'FF0000'><strong>");
+									}
+									if(count <= monthdays[thismonth]){
+										document.write(count);
+									}
+									else{
+										document.write(" ");
+									}
+									if(count == thisdate){
+										document.write("</strong></font>");
+									}
+									if(linktrue)
+									document.write("</a>");
+									document.write("</td>");
+									count++;
+								}
+								document.write("</tr>");
+								document.write("<tr>");
+								startspaces = 0;
+							}
+							document.write("</table>");
+							<!--end	*/					
+						</script>
+                    </div> 
+            	<div id="gamebanchay">
+                 <p>GAME BÁN CHẠY</p>
+                <marquee direction="up" scrollamount="3" scrolldelay="100" onmousemove="stop()" onmouseout="start()">
+                    <p><a href="#"><img src="Images/ark-survival-evolved-switch-1400x1400h.jpg" width="100" />ARK: Survival Evolved - US</a></p>
+                    <p><a href="#"><img src="Images/naruto-shippuden-ultimate-ninja-storm-4-road-to-boruto-switch-1400x1400h.jpg" width="100"/>Naruto Shippuden: Ultimate Ninja Storm 4 - Road To Boruto - ASIA/a></p>
+                     <p><a href="#"><img src="Images/xenoblade-chronicles-definitive-edition-switch-1400x1400h.jpg" width="100"/>Xenoblade Chronicles: Definitive Edition - US</a></p>
+                      <p><a href="#"><img src="Images/paper-mario-the-origami-king-switch-1400x1400h.jpg" width="100"/>Paper Mario: The Origami King - US</a></p>
+                </marquee></div>            
+                 <img src="Images/ps3-slim-tang-688-game-1400x1400.jpg" width="200" />
+                 <img src="Images/ps4-pro-2nd-km-00-1400x1400.jpg" width="200" />
+                 <img src="Images/ps5-digital-edition-00-1400x1400.jpg" width="200" />
+                 <img src="Images/package_redblue.jpg" width="200" />
+                <div id="lienketwebsize">
+                <p><b>LIÊN KẾT WEB SITE</b></p>
+                <select name="select" onchange="window.open(this.options[this.selectedIndex].value,'_blank')">
+                  <option>--- Chọn trang liên kết ---</option>
+                  <option value="https://game.haloshop.vn/index.php?route=common/home" selected="selected">GAME SHOP</option>
+                  <option value=https://www.playstation.com/en-us/>Playstation</option>
+                  <option value=https://www.nintendo.com/switch/>Nintendo</option>
+                
+                </select>
+                </div>    
+         
+
+        </nav>
+    
+        <article>
+        	<aside id="slide">
+        <div class="slide-pager">
+             <div class="slide-control-prev">«</div>
+             <div class="slide-control-next">»</div>
+        </div>
+         <div class="slide-container">
+       	  	<div class="slide-stage">
+        	<div class="slide-image"><a href="#"><img src="Images/ark-survival-evolved-switch-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/ea-sports-ufc-4-ps4-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/gear-club-unlimited-2-track-edition-switch-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/persona-5-royal-steelbook-ps4-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/nascar-heat-5-xbox-one-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/one-piece-pirate-warriors-4-switch-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/catherine-full-body-switch-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/borderlands-legendary-collection-switch-1400x1400h.jpg"/></a></div>
+            <div class="slide-image"><a href="#"><img src="Images/mortal-kombat-11-aftermath-kollection-switch-1400x1400h.jpg"/></a></div>
+
+         	
+         	</div>
+         </div>
+    </aside>
+            <h1>PS4</h1>
+           	 <div class ="game">
+            	<img class = "hinhgame" src="Images/ps4-pro-2nd-km-00-1400x1400.jpg" />     
+                <p class="tengame"><a href="#">Playstation 4 Slim 1TB - Summer Sale</a></p>
+                <img class="paylogo" src="Images/images.png" width="15" />
+                <p class="gia">7,200,000</p>          
+            </div>
+            
+            
+            
+            
+        </article>
+        <footer>
+        	<p> CÁM ƠN BẠN ĐÃ GHÉ XEM</p>
+            <p>©2020 - Nhà Phân Phối TN2525. Allright Reserved</p>
+            <p>Website được phát triển để sử dụng làm bài tập thực hành môn Thiết kế và Lập trình Web</p>
+            <p>Email: thang21022000@gmail.com</p>
+        </footer>
+         <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		 <script type="text/javascript" src="Slider.js"></script>
+</div>
+</body>
+</html>

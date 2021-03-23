@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Dangky.css" />
+<title>HALOGAME</title>
+<script language="javascript">
+	function checkinfo(){
+		var hoTen = document.getElementById("fullname");
+		if(hoTen.value == "")
+		{
+			alert("vui lòng nhập họ tên");
+			hoTen.focus();
+			return false;
+		}
+		
+		var birth = document.getElementById("birth");
+		if(birth.value == "")
+		{
+			alert("vui lòng chọn ngày sinh");
+			birth.focus();
+			return false;
+		}
+		
+		
+		var email=window.document.dangky.txtEmail;
+		 re=/\w+@\w+\.\w+/;
+		 if (email.value=="")
+		 {
+			 alert("Bạn chưa nhập Email.") ;
+			 email.focus();
+			 return false;
+		 }
+		 else
+		 if(re.test(email.value)==false)
+		 {
+			 alert("Email không đúng định dạng!");
+			 email.focus();
+			 return false;
+		 }
+
+		
+			/*thông tin hợp lệ*/
+			alert("Đăng ký thành công");
+			return true;
+		}
+</script>
+</head>
+
+<body>
+<div class="container">
+        <header>
+         <div class="menu">        
+                <ul>
+                	<li><a href="index.html"><img class="home" src="Images/home_circle_icon_137496.png" width="25" /></a></li>
+                    <li><a href="index.html">Trang chủ</li>
+                    <li><a href="GioiThieu.html">Giới thiệu</li>
+                    <li><a href="#">Liên hệ</li>
+                </ul>
+            </div>
+            <img class="logo" src="Images/logo.png" alt="HALOGAME" />
+            <img class="logo2"src="Images/halo-game-store-logo-retina-324x126.jpg" />
+            <div class="search">
+            	<input type="text" name="search" placeholder="Nhập Sản Phẩm Cần Tìm..." />
+				<input type="submit" name="find" value="Tìm"  />
+            </div>
+            <div class="login">
+            	<img class="logologin" src="Images/tải xuống (1).png" width="25" />
+                <a href="Dangnhap.html">Đăng Nhập/</a>
+                <a href="Dangky.html">Đăng Ký</a>
+            </div>
+            <div class="tragop">
+            	<a href="#">
+            	<img class="logotragop" src="Images/21004.png" width="25" />
+                <p>Trả Góp Lãi Xuất Từ 0%</p>             
+                </a>
+            </div>
+            <div class="giohang">
+            <a href="#">
+            	<img src="Images/pngtree-cart-icon-isolated-on-abstract-background-png-image_5165752.jpg" width="25" />
+                <p>Giỏ Hàng 0item(s)</p>
+            </a>
+            </div>
+            <img src="Images/ps4-slim-summer-sale-categories-2560x560.jpg" width="1280" />
+           
+        </header>
+ 
+        <section>
+            <form name="dangky" action="#" method="post" onsubmit="return checkinfo()">
+            <h1>Đăng Ký Thông Tin</h1>
+            <div id="colorbackground">
+                <fieldset>
+                  <legend id="legend"><b>Thông Tin Cá Nhân</b></legend>
+                    <table id="bang1" >
+                    <tr><td>Họ và Tên</td><td><input id="fullname" type="text" />
+                    </td></tr>
+                    <tr><td>Ngày Sinh</td>
+                    <td><input id="birth" type="date" /></td></tr>
+                    <tr>
+                        <td>Giới Tính</td>
+                        <td>
+                        <input id="gender" type="radio" value="V1" name="phai" checked >Nam
+                        <input id="gender" type="radio" value="V2" name="phai" >Nữ</TD>
+                        </td>
+                    </tr>
+                    <tr><td>Địa Chỉ</td><td><textarea name="textarea" rows="3" cols="21"></textarea></td></tr>
+                    <tr><td>Điện Thoại</td><td><input type="tel" /></td></tr>
+                    <tr><td>Email</td><td><input id="email" type="email" required="required" /></td></tr>    
+                   </table>
+                 </fieldset>
+                    <fieldset><legend id="legend"><b>Thông Tin Đăng Nhập</b></legend>
+                      <table id="bang2" >
+                    <tr><td>Tên Đăng Nhập</td><td><input id="acountname"type="text" required="required" /></td></tr>
+                    <tr><td>Mật Khẩu</td><td><input id="password" type="password" required="required" /></td></tr>
+                    <tr><td>Nhập Lại Mật Khẩu</td><td><input id="repassword" type="password" required="required" />
+                    </table></fieldset>
+                    <div align="center">
+                    <input id="button" type="submit" value="Đăng Ký"/>
+                    <input id="button" type="reset" value="Hủy" />
+                    </div>
+                    </div>
+    </form>
+            </section>
+        <footer>
+        	<p> CÁM ƠN BẠN ĐÃ GHÉ XEM</p>
+            <p>©2020 - Nhà Phân Phối TN2525. Allright Reserved</p>
+            <p>Website được phát triển để sử dụng làm bài tập thực hành môn Thiết kế và Lập trình Web</p>
+            <p>Email: thang21022000@gmail.com</p>
+        </footer>
+        
+</div>
+</body>
+</html>

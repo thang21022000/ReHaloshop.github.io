@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+}
+
+.logo{
+	float:left;
+	width:350px;
+	height:250px;
+}
+
+header{
+	
+	text-align:center;
+}
+
+/* tìm kiếm */
+.search{
+	margin-left:300px;
+	height:40px;
+}
+
+.search input[type=text]{
+	width:300px;
+	height:40px;
+	border-bottom-left-radius:15px;
+	border-top-left-radius:15px;
+	padding-left:10px;	
+}
+
+.search input[type=submit]{
+	width:50px;
+	height:45px;
+	background:black;
+	color:white;
+	font-weight:bold;
+	border-top-right-radius:15px;
+ 	border-bottom-right-radius:15px;	
+}
+
+.search input[type=submit]:hover{
+	cursor:pointer;
+}
+
+/* đăng nhập*/
+
+.login{
+	float:left;
+	padding-top:30px;
+	padding-left:180px;
+}
+.login a{
+	text-decoration:none;
+}
+
+.tragop{
+	float:left;
+	padding-top:30px;
+	padding-left:50px;
+}
+.tragop p{
+	display:inline;
+}
+
+.tragop a{
+	text-decoration:none;
+}
+.giohang{
+	float:left;
+	padding-top:30px;
+	padding-left:50px;
+}
+
+.giohang p{
+	display:inline;
+}
+
+.giohang a{
+	text-decoration:none;
+}	
+/* menu */
+
+.menu a{
+	text-decoration:none;
+}
+
+body{
+        margin: 0;
+    }
+.menu ul{
+		clear:both;
+        margin: 0;
+        padding: 0;
+        padding-top: 13px;
+        list-style: none;
+        background-color:#FC0;
+		font-size:20px;
+}
+
+.menu li{
+        width: 150px;
+     
+}
+
+.menu > ul{
+        height: 50px;
+}
+
+.menu > ul > li{
+        display: inline-block;
+        border-right: 1px solid #dddddd;
+        position: relative;
+		font-weight:bold;
+}
+
+.menu > ul > li:first-child{
+	border:none;
+}
+
+.menu > ul > li:hover{
+	font-style:italic;
+}
+
+.menu > ul > li a:hover{
+	color:white;
+}
+	
+.menu > ul > li > ul li{
+        padding: 5px 0;
+        border-bottom: 1px solid #dddddd;
+}
+	
+ul li:last-child{
+        border: none;
+}
+
+nav{
+	 float: left;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 1em
+}
+
+/* body */
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow:hidden;
+}
+article h1{
+	text-align:center;
+	background-color:black;
+	color:white;
+	clear:left;
+}
+
+.game{
+	width:280px;
+	height:450px;
+
+	text-align:center;
+
+	margin:10px 10px;
+	float:left;
+}
+
+.tengame{
+	margin-top:10px;
+	height:40px;
+}
+.tengame a{
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+.tengame a:hover{
+	font-style:italic;
+	color:#FC0;
+}
+
+.hinhgame{
+	margin-top:10px;
+	width:270px;
+	height:300px;
+}
+
+.hinhgame:hover{
+	transform:scale(1.1);
+}
+
+.gia{
+	display:inline;
+	color:#FC0;
+	font-size:25px;
+	margin-left:3px;
+}
+
+nav#left div#gamebanchay{
+	border-bottom:1px solid black;
+	border-radius:4px;
+	margin-bottom:30px;
+}
+
+/* LEFT */
+nav#left>div>p{
+ margin-top:20px;
+ background-color:black;
+ text-align:center;
+ font-size:15px;
+ font-weight:bold;
+ color:white;
+ padding-top:5px;
+ height:23px;
+}
+
+nav#left>div#gamebanchay p {
+	clear:left;
+}
+
+nav#left>div#gamebanchay img{
+	float:left;
+	margin-top:10px;
+
+}
+
+nav#left>div#gamebanchay a{
+	text-decoration:none;
+	font-size:9px;
+	font-family:Arial;
+	color:#FC0;
+	height:70px;
+}
+
+nav#left>div#gamebanchay a:hover{
+	font-weight:bold;
+	font-style:italic;
+}
+
+.categories{
+	margin-top:20px;
+	border:1px solid;
+	height:420px;
+}
+
+.categories p{
+	background-color:black;	
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	height:25px;
+	padding-top:5px;
+}
+
+.categories > ul{
+	padding-left:10px;
+	font-size:18px;
+	font-family:Arial;
+}
+
+.categories >ul>li{
+	height:200px;
+	list-style-position:inside;
+	padding-left:5px;	
+}
+
+.categories >ul>li#playgame{
+	list-style-image:url(Images/play-game-675401.png);
+}
+
+.categories >ul>li#disk{
+	list-style-image:url(Images/disk.png);
+}
+
+
+.categories>ul>li a{
+	color:#206AB5;
+	text-decoration:none;
+}
+.categories>ul>li>ul a{
+	color:#206AB5;
+	text-decoration:none;
+}
+
+.categories >ul>li>ul a:hover{
+	color:#FC0;
+}
+
+/* calender*/
+.calender {
+	border:1px solid;	
+	margin-left:20px;
+	width:205px;;
+	text-decoration:none;
+	margin-top:20px;
+}
+
+.calender table tr td.monthyear{
+	background-color:black;
+	 text-align:center;
+	 font-size:16px;
+	 font-weight:bold;
+	 color:#FFF;
+		
+}
+
+.calender table tr td.weektitle{
+	text-align:center;
+}
+
+footer{
+	padding-top:3px;	
+	background:black;
+	color:white;
+	text-align:center;
+}
+
+
